@@ -6,7 +6,7 @@ const SearchBox = () => {
     <div className="searchBox">
       <h1 className='font-bold text-xl '>Search the weather</h1>
       <form>
-        <TextField id="city" label="City" variant="outlined" required />
+        <TextField id="city" label="City" variant="outlined" margin="normal" required />
       </form>
       
     </div>
