@@ -1,5 +1,5 @@
 import TextField from '@mui/material/TextField';
-import './searchBox.css';
+import './SearchBox.css';
 
 const SearchBox = () => {
   return (
