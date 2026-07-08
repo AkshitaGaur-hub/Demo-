@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-const searchBox=()=>{
+const SearchBox=()=>{
   const[city,setCity]=useState('');
 
 
@@ -15,7 +15,7 @@ const searchBox=()=>{
   const getWeather=async()=>{
     try{
       const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
-     
+     console.log(response)
     const data=await response.json();
     console.log(data);
     }catch(error){
@@ -64,7 +64,6 @@ const searchBox=()=>{
   }}
    />
       </form>
-      yess
     </div>
   );
 };
