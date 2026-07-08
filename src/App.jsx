@@ -4,7 +4,7 @@ import SearchBox from "./SearchBox";
 
 const App = () => {
   return (
-    <div className=" pattern-background min-h-screen w-full flex items-center justify-center p-6">
+    <div className=" pattern-background w-full flex items-center justify-center p-6">
       <div className='flex flex-col items-center p-5 mx-auto 
 bg-black/30
 backdrop-blur-xl
