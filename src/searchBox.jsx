@@ -15,7 +15,7 @@ const SearchBox=()=>{
   const getWeather=async()=>{
     try{
       const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
-     
+     console.log(response)
     const data=await response.json();
     console.log(data);
     }catch(error){
