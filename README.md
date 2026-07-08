@@ -1,4 +1,4 @@
-# 🌦️ Weatherly
+# 🌦️ Atmos
 
 <div align="center">
 
