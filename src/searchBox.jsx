@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-const searchBox=()=>{
+const SearchBox=()=>{
   const[city,setCity]=useState('');
 
 
@@ -23,7 +23,7 @@ const searchBox=()=>{
     }
 
   };
-  const handelSubmit=(e)=>{
+  const handleSubmit=(e)=>{
     e.preventDefault();
     getWeather();
   };
@@ -33,9 +33,9 @@ const searchBox=()=>{
   return (
     <div className="searchBox">
       <h1 className='font-bold text-xl m-2'>Search the weather</h1>
-      <form onSubmit={handelSubmit}>
+      <form onSubmit={handleSubmit}>
        
-        <TextField className='bg-zinc-200' id="city" label="City" variant="outlined" margin="normal" required  sx={{
+        <TextField className='bg-zinc-200' id="city" label="City" variant="outlined" margin="normal"  vlaue= {city} required  onChange={handleChange} sx={{
     "& .MuiOutlinedInput-root": {
       backgroundColor: "rgba(0,0,0,0.1)",
       color: "black",
@@ -63,8 +63,13 @@ const searchBox=()=>{
     },
   }}
    />
+   <button 
+          type="button" 
+          className="m-3 text-white rounded-2xl bg-gradient-to-r from-pink-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-1 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-600 font-medium text-sm px-4 py-2.5 text-center leading-5 cursor-pointer"
+        >
+          Search
+        </button>
       </form>
-      yess
     </div>
   );
 };
